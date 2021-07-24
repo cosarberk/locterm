@@ -1,0 +1,35 @@
+
+[
+    {
+      "commmandName": "help",
+      "paramAction": [ ]
+    },
+    {
+    
+      "commmandName": "clear",
+      "paramAction": [ ]
+    },
+    {
+    
+        "commmandName": "root",
+        "paramAction": [ ]
+      },
+      {
+    
+        "commmandName": "date",
+        "paramAction": [ ]
+      },
+      {
+    
+        "commmandName": "time",
+        "paramAction": [ ]
+      },
+      {
+    
+        "commmandName": "locterm",
+        "paramAction": ["-r","-h","-v" ]
+      }
+  ]
+
+
+  

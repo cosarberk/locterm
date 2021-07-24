@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./LocTerm/LocTerm.js" ></script>
+    <link rel="stylesheet" href="./LocTerm/LocTerm.css">
+    <title>Document</title>
+
+<style>
+    html,body{background-color:#121212;overflow: auto;}
+    *{margin:0;padding: 0;border:0;}
+    .term_area{width:100%;height:100vh;}
+</style>
+
+
+</head>
+<body>
+    <div class="term_area">
+
+    </div>
+
+
+   
+</body>
+</html>
+
+<script>
+window.onload=()=>{
+
+ 
+
+    const Term_Area = document.querySelector(".term_area"),
+ 
+    term_ops={LineNumber:"on",LineName:"Berk@Coşar",LineIcon:":~$"}
+
+      const  tablesource =[
+    {
+        tr:[
+        "title 1",
+        "title 2",
+        "title 3",
+        "title 4"
+        
+        ]
+    },
+    {
+        tr:[
+        "contents",
+        "contents",
+        "contents",
+        "contents"
+        ]
+        
+    },
+    {
+        tr:[ 
+        "contents",
+        "contents",
+        "contents",
+        "contents"
+        ]
+        
+    },
+    
+]
+
+
+
+    const myterm = new LocTerm(Term_Area,term_ops)
+     myterm.STDOUT("<p style='color:yellow;width:100%;text-align:center;background-color:#DE3163;font-weight:bold' >WELCOME TO LOCTERM</p>")
+     myterm.STDOUT("<p style='color:#00ff00;width:100%;text-align:center' >Author : Berk Coşar</p>")
+     myterm.STDOUT("<p style='color:aqua;width:100%;text-align:center' >Licanse : Apache Licanse 2.0</p>")
+     myterm.STDOUT_TABLE({source:tablesource,borderColor:"transparent"})
+     myterm.ONLISTEN((data)=>{
+       let Table_Source = [
+           {tr:[
+               "-- Command --","-- parameter --","-- arguman --"
+           ]},
+           {tr:[
+               data.command,data.parametre,data.paramvalue
+               ]}
+       ]
+      // myterm.STDOUT_TABLE({source:Table_Source,borderColor:"transparent"})
+    })
+  
+
+    
+    
+}
+
+
+
+</script>
