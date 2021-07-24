@@ -17,9 +17,7 @@
 
 </head>
 <body>
-    <div class="term_area">
-
-    </div>
+    <div class="term_area"> </div>
 
 
    
@@ -74,17 +72,7 @@ window.onload=()=>{
      myterm.STDOUT("<p style='color:aqua;width:100%;text-align:center' >Licanse : Apache Licanse 2.0</p>")
      myterm.STDOUT_TABLE({source:tablesource,borderColor:"transparent"})
      myterm.ONLISTEN((data)=>{
-
         console.log(data)
-       let Table_Source = [
-           {tr:[
-               "-- Command --","-- parameter --","-- arguman --"
-           ]},
-           {tr:[
-               data.command,data.parametre,data.paramvalue
-               ]}
-       ]
-      // myterm.STDOUT_TABLE({source:Table_Source,borderColor:"transparent"})
     })
   
 
