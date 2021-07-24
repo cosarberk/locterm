@@ -28,6 +28,11 @@
     
         "commmandName": "locterm",
         "paramAction": ["-r","-h","-v" ]
+      },
+      {
+    
+        "commmandName": "custom",
+        "paramAction": ["-a","-b","-c" ]
       }
   ]
 

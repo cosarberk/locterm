@@ -491,7 +491,7 @@ LocTerm.prototype.STATIC_COMMANDS = function(command){
         
         ]
         ths.STDOUT("<p style='color:#00ff00' >locterm is terminal shell that runs your custom commands, it's in the core structure,so you need to import your custom commands.Locterm has its own basic commands.</p>")
-        ths.STDOUT("<a target='_blank' href ='https://github.com/cosarberk' style='color:orange;'>Go to Github Page For More Information -> click here")
+        ths.STDOUT("<a target='_blank' href ='https://github.com/cosarberk/locterm' style='color:orange;'>Go to Github Page For More Information -> click here")
         ths.STDOUT_TABLE({source:tablesource,borderColor:"transparent"})
     }
 }

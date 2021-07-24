@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./LocTerm/LocTerm.js" ></script>
-    <link rel="stylesheet" href="./LocTerm/LocTerm.css">
-    <title>Document</title>
+    <link rel="icon" href="./LocTerm/locterm180X180.png" type="image/x-icon" />
+    <title>Locterm</title>
 
 <style>
     html,body{background-color:#121212;overflow: auto;}
@@ -74,6 +74,8 @@ window.onload=()=>{
      myterm.STDOUT("<p style='color:aqua;width:100%;text-align:center' >Licanse : Apache Licanse 2.0</p>")
      myterm.STDOUT_TABLE({source:tablesource,borderColor:"transparent"})
      myterm.ONLISTEN((data)=>{
+
+        console.log(data)
        let Table_Source = [
            {tr:[
                "-- Command --","-- parameter --","-- arguman --"
