@@ -338,8 +338,7 @@ LocTerm.prototype.STDOUT_TABLE = function(table_options={
     stdout.appendChild(Mtable)
     stdout.style="width:100%;height:auto;float:left;font-size:"+ths.FontSize+";font-family:"+ths.FontFamily+";";
     Global_Main_Area.appendChild(stdout)
-    terminput_i++;
-    ths.ADD_TERMINPUT(Global_Main_Area);
+    ths.ADD_LINE()
 }
 
 // run listenerstd
@@ -496,6 +495,13 @@ LocTerm.prototype.STATIC_COMMANDS = function(command){
     }
 }
 
+//add new line
+
+LocTerm.prototype.ADD_LINE = function(){
+    let ths = this;
+    terminput_i++;
+    ths.ADD_TERMINPUT(Global_Main_Area);
+}
 
     return LocTerm;
 })();
