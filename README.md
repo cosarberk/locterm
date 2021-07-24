@@ -10,7 +10,7 @@ locterm is terminal shell that runs your custom commands, it's in the core struc
    Locterm has its own basic commands.(run help command for see)
    
 # DEMO
-[my blog website "neuroneyes" for usage example -- click here --](http://bercosar.com)
+[my blog website "neuroneyes" for usage example -- click here --](https://neuroneyes.com)
 
 # how to work ?
 Locterm compares the commands you import with the client input.
