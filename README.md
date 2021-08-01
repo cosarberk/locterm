@@ -2,11 +2,11 @@
 
 
 # locterm
-this is a javascript library.
 
 ![](https://github.com/cosarberk/locterm/blob/main/LocTerm/locterm180X180.png)
 
 
+this is a javascript library.
 
 locterm is terminal shell that runs your custom commands, it's in the core structure,so you need to import your custom commands.
    Locterm has its own basic commands.(run help command for see)
